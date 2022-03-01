@@ -1,3 +1,5 @@
+# Peter's Problem 2022 No.9
+
 from itertools import product
 
 digit_to_list_dict = {
@@ -39,7 +41,7 @@ def correct_amnt_differences(binary_list):
         if i == 1:
             num_of_lights += 1
     
-    if num_of_differences == 2 and num_of_lights == 15:
+    if num_of_differences == 4 and num_of_lights == 15:
         return True
     else:
         return False
@@ -50,4 +52,4 @@ for prod in list(product(digits, repeat=3)):
         num_of_valid_nums += 1
         correct_prods.append(prod)
 
-print(f"Answer: {num_of_valid_nums}\nCorrect Products: {correct_prods}")
+print(f"\nAnswer: {num_of_valid_nums}\n\nCorrect Products: {correct_prods}")
